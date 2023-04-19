@@ -11,8 +11,10 @@ const MealItemForm = ({ onAddToCart, id }) => {
     if (!quantity || quantity < 1 || quantity > 5) {
       setQuantityIsValid(false);
       return; //returns from the submitHandler function
+    } else {
+      setQuantityIsValid(true);
+      onAddToCart(+quantity);
     }
-    onAddToCart(+quantity);
   };
   const inputChangeHandler = (event) => {
     setQuantity(event.target.value);
