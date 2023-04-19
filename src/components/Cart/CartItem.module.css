@@ -34,12 +34,14 @@
 
 .actions {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 0.5rem;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 25em) {
+  /*400px*/
   .actions {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 

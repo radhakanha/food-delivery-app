@@ -57,3 +57,14 @@
     transform: scale(1);
   }
 }
+@media (max-width: 37.5em) {
+  .description {
+    display: none;
+  }
+  .button {
+    padding: 0.75rem 1.5rem;
+  }
+  .badge {
+    margin-left: 0;
+  }
+}

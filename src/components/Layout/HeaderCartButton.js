@@ -26,7 +26,7 @@ const HeaderCartButton = ({ showCart }) => {
       <span className={classes.icon}>
         <CartIcon />
       </span>
-      <span>Your Cart </span>
+      <span className={classes.description}>Your Cart </span>
       <span className={classes.badge}>{totalQuantity}</span>
     </button>
   );
